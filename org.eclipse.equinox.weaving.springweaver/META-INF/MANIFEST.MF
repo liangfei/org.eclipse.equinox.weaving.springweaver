@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Springweaver
+Bundle-SymbolicName: org.eclipse.equinox.weaving.springweaver
+Bundle-Version: 0.0.2
+Bundle-Activator: org.eclipse.equinox.weaving.springweaver.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7,
+ JavaSE-1.6
+Import-Package: org.eclipse.equinox.service.weaving,
+ org.eclipse.gemini.blueprint.context;version="1.0.2.RELEASE",
+ org.eclipse.osgi.service.debug,
+ org.eclipse.osgi.service.resolver,
+ org.eclipse.osgi.util;version="1.1.0",
+ org.osgi.framework;version="1.5.0",
+ org.springframework.instrument.classloading;version="2.5.5",
+ org.springframework.util;version="2.5.5"
+Export-Package: org.eclipse.equinox.weaving.springweaver
+Bundle-Vendor: Martin Lippert, Jan Stamer
+Require-Bundle: org.aspectj.runtime;bundle-version="1.7.2",
+ org.aspectj.weaver;bundle-version="1.7.2"
+
